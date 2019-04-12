@@ -1,0 +1,12 @@
+type Author{
+    id: ID!
+    nickname: String!
+    books: [Book]
+}
+
+type Book{
+    id: ID!
+    title: String!
+    isbn: String!
+    author: Author
+}

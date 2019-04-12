@@ -1,0 +1,10 @@
+type Query {
+    findAllAuthors: [Author]!
+    findAllBooks: [Book]!
+    countBook(author: ID):Long
+}
+
+type Mutation {
+    newAuthor(id: ID!, nickname: String!) : Author!
+    newBook(id: ID!, title: String!, isbn: String!, author: ID!) : Book!
+}

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: graphql-demo
+
+server:
+  port: 9000
+
+graphql:
+  servlet:
+    enabled: true
+    corsEnabled: true
+    mapping: /graphql
+
